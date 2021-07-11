@@ -1,0 +1,138 @@
+<style>
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+input[type=file]::-webkit-file-upload-button {
+  border: 2px solid #6c5ce7;
+  padding: .2em .4em;
+  border-radius: .2em;
+  background-color: #a29bfe;
+  transition: 1s;
+}
+
+
+input[type=file]::file-selector-button {
+  border: 2px solid #6c5ce7;
+  padding: .2em .4em;
+  border-radius: .2em;
+  background-color: #a29bfe;
+  transition: 1s;
+}
+
+input[type=file]::-webkit-file-upload-button:hover {
+  background-color: #81ecec;
+  border: 2px solid #00cec9;
+}
+
+input[type=file]::file-selector-button:hover {
+  background-color: #81ecec;
+  border: 2px solid #00cec9;
+}
+.container {
+  display:flex;
+background: linear-gradient(#ffffff,#00ffff);
+background-size:cover;
+justify-content:center;
+}
+.center{
+margin:auto;
+width:110%;
+height:90%;
+border:3px solid #fbb034;
+padding:26px;
+background:linear-gradient(#ffffff,#00ffff);
+}
+.div{
+color: black;
+font-size: 20px;
+font-family:serif;
+text-decoration:underline;
+}
+p
+{
+color: black;
+font-size: 40px;
+font-family:serif;
+text-decoration:underline;
+}
+.container{
+display:flex;
+justify-content:center;
+textalign:center;
+}
+     input[type=submit] {
+        background-color: #800000;
+        border: none;
+        color: #fff;
+        padding: 15px 30px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+</style>
+  <a class="navbar-brand" href="#"><img src="{{ url_for('static', filename='logo11.jpg') }}" class="img-responsive" style="width: 140px; margin-top: -16px;"></a>
+<div class="container">
+<div class="box">
+
+<form action="{{ url_for('gfg') }}" method="POST">
+
+<p>MUCORMYCOSIS SYMPTOM CHECK</p>
+
+<h1>Please select all the symptoms you are facing...</h1>
+
+<div class=flex items-center"><input type="checkbox" name="symptom[]" value="One-sided facial swelling"> One-sided facial swelling</div><br> 
+<div class=flex items-center"><input type="checkbox" name="symptom[]"> Headache</div><br> 
+<div class=flex items-center"><input type="checkbox" name="
+symptom[]"value="
+Nasal or sinus congestion"> 
+Nasal or sinus congestion</div><br> 
+<div class=flex items-center"><input type="checkbox" name="symptom[]" value="Black lesions on nasal bridge or upper inside of mouth that quickly become more severe"> Black lesions on nasal bridge or upper inside of mouth that quickly become more severe </div><br> 
+<div class=flex items-center"><input type="checkbox" name="
+symptom[]" value="
+Fever"> 
+Fever</div><br> 
+<div class=flex items-center"><input type="checkbox" name=
+"symptom[]" value="
+Cough
+Chest pain
+"> 
+Cough
+Chest pain
+</div><br> 
+<div class=flex items-center"><input type="checkbox" name=
+ 
+"symptom[]" value="Shortness of breath
+ 
+Abdominal pain"> Shortness of breath
+ 
+Abdominal pain</div><br> 
+<div class=flex items-center"><input type="checkbox" name="symptom[]" value="
+Nausea and vomiting
+">Nausea and vomiting
+</div><br> 
+<div class=flex items-center"><input type="checkbox" name=
+"symptom[]" value="Gastrointestinal bleeding"> Gastrointestinal bleeding</div><br> 
+<div class=flex items-center"><input type="checkbox" name="symptom[]" value="
+pain"> pain</div><br> 
+<div class=flex items-center"><input type="checkbox" name="symptom[]" value="warmth"> warmth</div><br> 
+<div class=flex items-center"><input type="checkbox" name="symptom[]" value=" excessive redness">  excessive redness</div><br> 
+<div class=flex items-center"><input type="checkbox" name="symptom[]" value="
+swelling around a wound"> swelling around a wound</div><br> 
+
+<input type="submit" value="Submit">
+
+</div>
+</div>
+
+

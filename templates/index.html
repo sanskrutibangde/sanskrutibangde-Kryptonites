@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trace iT</title>
+  
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+  
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <!--banner-->
+  <section id="banner" class="banner">
+    <div class="bg-color">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="col-md-12">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+             <a class="navbar-brand" href="#"><img src="{{ url_for('static', filename='logo11.jpg') }}" class="img-responsive" style="width: 140px; margin-top: -16px;"></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#banner">Home</a></li>
+                <li class=""><a href="#service">Our Services</a></li>
+                <li class=""><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+<br> 
+      <div class="container">
+        <div class="row">
+          <div class="banner-info">
+            <style>
+		body {
+  		background-image: url("{{ url_for('static', filename='bg-banner01.jpg') }}");
+  		background-repeat: no-repeat;
+  		background-attachment: fixed;
+  		background-size: 100% 100%;
+		}
+		</style>
+ <br> 
+
+            <div class="banner-text text-center">
+             <br> <h1 class="black">Healthcare for you!!</h1> <br> 
+              <p2>A Top Website for Reliable & Genuine information</p2>
+<br>
+
+              
+            </div>
+            <div class="overlay-detail text-center">
+              <a href="#service"><i class="fa fa-angle-down"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ banner-->
+  <!--service-->
+ 
+  <!--cta-->
+  <!--about-->
+
+ <section id="service" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-4">
+          <h2 class="ser-title">Our Services</h2>
+          <hr class="botm-line">
+          <p>At TraceiT we are committed to supply Genuine & Reliable information taken from trustworthy sources. Our platform helps you to use various services at only a single platform. We provide services like COVID-19 detection by using chest x-ray, Mucormycosis (commonly known as Black Fungus) detection, Hospital beds availability, Oxygen availability and COVID-19 vaccine locator.</p>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="service-info">
+            <div class="icon">
+              <i class="fa fa-stethoscope"></i>
+            </div>
+            <div class="icon-info">
+              <h4><a href={{url_for('covid')}} title="COVID DETECTION" style="color:black;">COVID DETECTION</a></h4>
+              <p>Trace it is available to every user 24/7. Our system takes input a person's Chest X-ray and uses concept of Machine Learning & Neural network to determine if a person has COVID.  </p>
+            </div>
+          </div>
+          <div class="service-info">
+            <div class="icon">
+              <i class="fa fa-ambulance"></i>
+            </div>
+            
+            <div class="icon-info">
+              <h4><a href={{url_for('bed')}} title="BED AVAILABILITY" style="color:black;">BED AVAILABILITY</a></h4>
+              <p>TraceiT with other functionality also shows Hospital beds availability and Oxygen availability.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="service-info">
+            <div class="icon">
+              <i class="fa fa-user-md"></i>
+            </div>
+           
+            <div class="icon-info">
+              <h4><a href={{url_for('mucormycosis')}} title="MUCORMYCOSIS CHECKER" style="color:black;">MUCORMYCOSIS CHECKER</a></h4>
+              <p>TraceiT provides reliable self-assessment test  which shows the possibility of having Black Fungus infection. It also provides details about different types of Mucormycosis infections.</p>            
+      </div>
+          </div>
+          <div class="service-info">
+            <div class="icon">
+              <i class="fa fa-medkit"></i>
+            </div>
+            
+            <div class="icon-info">
+              <h4><a href={{url_for('vaccine')}} title="VACCINE LOCATOR" style="color:black;">VACCINE LOCATOR</a></h4>
+              <p> Trace iT will be publishing up-to-date COVID-19 vaccine availability at hospitals. Will locate vaccines available near you.  </p>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!--cta-->
+  <!--contact-->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="ser-title">Contact us</h2>
+          <hr class="botm-line">
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <h3>Contact Info</h3>
+          <div class="space"></div>
+          <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>321 xyz street<br> Nagur, 440012</p>
+          <div class="space"></div>
+          <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>info@Traceit.com</p>
+          <div class="space"></div>
+          <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>+1 800 123 1234</p>
+        </div>
+        
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ contact-->
+  <!--footer-->
+  <footer id="footer">
+    <div class="top-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">About us</h4>
+            </div>
+            <div class="info-sec">
+              <p>info@TraceiT.com</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">Quick Links</h4>
+            </div>
+            <div class="info-sec">
+              <ul class="quick-info">
+                <li><a href="index.html"><i class="fa fa-circle"></i>Home</a></li>
+                <li><a href="#service"><i class="fa fa-circle"></i>Service</a></li>
+                <li><a href="#contact"><i class="fa fa-circle"></i>Appointment</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">Follow us</h4>
+            </div>
+            <div class="info-sec">
+              <ul class="social-icon">
+                <li class="bglight-blue"><i class="fa fa-facebook"></i></li>
+                <li class="bgred"><i class="fa fa-google-plus"></i></li>
+                <li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
+                <li class="bglight-blue"><i class="fa fa-twitter"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <script src="{{ url_for('static', filename="js/jquery.min.js")}}"></script>
+  <script src="{{ url_for('static', filename="js/jquery.easing.min.js")}}"></script>
+  <script src="{{ url_for('static', filename="js/bootstrap.min.js")}}"></script>
+  <script src="{{ url_for('static', filename="js/custom.js")}}"></script>
+  <script src=""{{ url_for('static', filename="js/contactform/contactform.js")}}"></script>
+
+</body>
+
+</html>

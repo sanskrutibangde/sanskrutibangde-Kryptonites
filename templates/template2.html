@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>TraceIT</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+  
+<style>
+  ::placeholder {
+    color:rgb(13, 13, 14);
+    opacity:0.8; /* Firefox */
+    font-weight: bold;
+  }
+.container {
+  display:flex;
+background: linear-gradient(#ffffff,#00ffff);
+background-size:cover;
+border:4px solid black;
+justify-content:center;
+}
+.center{
+margin:auto;
+width:40%;
+height:35%;
+color:black;
+font-family:serif;
+padding:60px 60px;
+
+}
+}
+  </style>
+
+
+</head>
+<body style="background-color:#48AAAD"; 
+background-repeat:no-repeat;
+background-size:cover;
+height:100vh;
+display:flex;
+">
+<div class="center">
+<div class="container">
+
+<br>
+<br><br><br><br><br><br><br><br>
+<div class="login card" style="color: Black;" "font-weight: bold;" "font-family: serif"; "font-size: 110%"; >
+<br><br><br><br><br><br><br>
+<center><text-align="center">Your Result: 
+<br><br><br><br><br><br><br><br><br><br><br>
+<center>{{text}}
+<br><br>
+</div>
+</div></div>
+
+</body>
+</html>
