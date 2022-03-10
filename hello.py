@@ -20,9 +20,7 @@ def index():
 @app.route("/covid")
 def covid():
     return render_template("covid.html")
-@app.route("/bed")
-def bed():
-    return render_template("bed.html")
+
 @app.route("/mucormycosis")
 def mucormycosis():
     return render_template("mucormycosis.html")
